@@ -9,12 +9,12 @@ import org.testng.annotations.Test;
 
 public class GooglePageSearch {
   @Test
-  public void JavaSearchTest() {
+  public void GoogleTestJava() {
 	  WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
-		WebElement srcBox = driver.findElement(By.id("APjFq"));
+		WebElement srcBox = driver.findElement(By.id("APjFqb"));
 		srcBox.sendKeys("Java Tutorial");
-
+		srcBox.sendKeys(Keys.ENTER);
   }
 }
